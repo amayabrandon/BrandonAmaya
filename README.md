@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+Descripción:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositorio contiene pruebas automatizadas utilizando Playwright para interactuar con el sitio web del Banco Caja Social y verificar la funcionalidad de la sección de Empresas, específicamente la navegación hasta el documento de Reglamento de Recaudos.
 
-## Available Scripts
+Pruebas Incluidas:
 
-In the project directory, you can run:
+    Acceso al sitio web: Navega a la página principal del Banco Caja Social.
+    Navegación a la sección de Empresas: Localiza y hace clic en el enlace de Empresas.
+    Acceso a la sección de Productos: Interacciona con el primer elemento SVG para desplegar el menú de productos.
+    Selección de Pagos y Recaudos: Navega hasta la opción de Recaudos dentro del menú de Pagos y Recaudos.
+    Acceso a contenidos relacionados: Localiza y hace clic en el enlace de Contenidos Relacionados.
+    Descarga del Reglamento de Recaudos: Abre el documento de Reglamento de Recaudos en una nueva pestaña.
 
-### `npm start`
+Tecnologías Utilizadas:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Playwright: Framework de pruebas de extremo a extremo para automatizar navegadores web.
+    Node.js: Entorno de ejecución para JavaScript.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Cómo Ejecutar las Pruebas:
 
-### `npm test`
+    Clonar el repositorio:
+    Bash
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    git clone https://github.com/tu-usuario/tu-repositorio.git
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Instalar las dependencias:
+Bash
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm install
 
-### `npm run eject`
+Ejecutar las pruebas:
+Bash
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npx playwright test
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Estructura del Proyecto:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    tests: Contiene los archivos de prueba (por ejemplo, example.spec.js).
+    package.json: Archivo de configuración de Node.js, que incluye las dependencias.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Consideraciones y Mejoras Futuras:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Selectores: Los selectores utilizados en las pruebas pueden necesitar ajustes si la estructura del sitio web cambia.
+    Esperas: Se pueden agregar esperas más explícitas para garantizar que los elementos estén completamente cargados antes de interactuar con ellos.
+    Informes: Implementar un generador de informes para obtener resultados detallados de las pruebas.
+    Parametrización: Permitir la parametrización de las pruebas para ejecutarlas con diferentes datos de entrada.
+    Cobertura de pruebas: Ampliar la cobertura de las pruebas para incluir más escenarios y funcionalidades del sitio web.
